@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { contextApi } from "../../context/Context";
-import { FcGoogle } from 'react-icons/Fc';
+// import { FcGoogle } from 'react-icons';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../../Firebase/Firebase.config";
 
@@ -73,7 +73,7 @@ const Login = () => {
             <p className=" ">Not a Member? <Link className="text-blue-800" to="/register">Sign up</Link></p>
             <p className="text-2xl text-center font-Poppins font-bold">or</p>
             <div className="flex items-center mb-5">
-                <p className="text-xl px-2">Sign in with:</p><button onClick={hadleGoogle}><FcGoogle></FcGoogle></button>
+                <p className="text-xl px-2">Sign in with:</p><button onClick={hadleGoogle}>Google</button>
             </div>
         </div>
     );
