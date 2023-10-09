@@ -1,6 +1,6 @@
 
 import { Link, NavLink } from "react-router-dom";
-import { GiBigDiamondRing } from 'react-icons/Gi';
+// import { GiBigDiamondRing } from 'react-icons/Gi';
 import { useContext } from "react";
 import { contextApi } from "../../context/Context";
 const Header = () => {
@@ -30,11 +30,7 @@ const Header = () => {
                             }
                         </ul>
                     </div>
-                    <i className="text-3xl text-yellow-300 font-bold">
-                        {
-                            <GiBigDiamondRing></GiBigDiamondRing>
-                        }
-                    </i>
+                    
 
 
                     <a className="px-2 normal-case text-2xl font-bold">SWEETDAY</a>
